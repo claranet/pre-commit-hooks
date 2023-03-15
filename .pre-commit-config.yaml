@@ -1,0 +1,22 @@
+---
+repos:
+  # - repo: https://github.com/claranet/pre-commit-hooks
+  #   rev: v1.0.0
+  #   hooks:
+  #     - id: gitlab-ci-local
+  #       # optional custom config:
+  #       args:
+  #         - test
+  - repo: local
+    hooks:
+      - id: gitlab-ci-local
+        name: Execute gitlab-ci-local
+        description: This hook executes gitlab-ci-local
+        entry: gitlab-ci-local
+        language: node
+        additional_dependencies:
+          - gitlab-ci-local
+        always_run: true
+        pass_filenames: false
+        require_serial: true
+...

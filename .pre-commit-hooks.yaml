@@ -1,0 +1,12 @@
+---
+- id: gitlab-ci-local
+  name: Execute gitlab-ci-local
+  description: This hook executes gitlab-ci-local
+  entry: pwd
+  language: script
+  additional_dependencies:
+    - gitlab-ci-local
+  always_run: true
+  pass_filenames: false
+  require_serial: true
+...
