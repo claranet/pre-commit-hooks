@@ -1,4 +1,5 @@
 .gitlab-ci-local
+.gitlab-ci.yml
 
 ### macOS ###
 
