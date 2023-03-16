@@ -11,6 +11,7 @@ This is a colleciton of [pre-commit](http://pre-commit.com) hooks made and used 
 
 ```yaml
   - repo: https://github.com/claranet/pre-commit-hooks
+    rev: v1.0.0
     hooks:
       - id: gitlab-ci-local
         # optional custom config:
