@@ -2,8 +2,8 @@
 - id: gitlab-ci-local
   name: Execute gitlab-ci-local
   description: This hook executes gitlab-ci-local
-  entry: pwd
-  language: script
+  entry: gitlab-ci-local
+  language: node
   additional_dependencies:
     - gitlab-ci-local
   always_run: true
